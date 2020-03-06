@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x:hidden;
+   
 }
 
 // Root Variables
@@ -16,7 +16,8 @@ $font-family: 'Ubuntu', sans-serif;
 // Body
 
 body {
-    font-family: $font-family;
+    font-family: $font-family;  
+   
 }
 
 
@@ -55,6 +56,12 @@ a.item {
 #contact {
     background-color: $secondary;
 
+    .heading {
+        text-align: center!important;
+        font-size: 4rem;
+        overflow-y: hidden;
+    }
+    
 }
 
 .pranita {
@@ -63,12 +70,19 @@ a.item {
 
 .about {
     padding-top:30px;
+    font-size: 1.5rem;
 }
 
 .photo {
     margin: 0!important;
 }
-  
+
+// Footer
+
+.main-footer {
+    height:60px;
+}
+ 
 
 // Media Queries
 

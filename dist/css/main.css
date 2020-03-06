@@ -2,8 +2,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  overflow-x: hidden; }
+  padding: 0; }
 
 body {
   font-family: "Ubuntu", sans-serif; }
@@ -25,15 +24,23 @@ nav a.item {
 
 #contact {
   background-color: #d6cbd3; }
+  #contact .heading {
+    text-align: center !important;
+    font-size: 4rem;
+    overflow-y: hidden; }
 
 .pranita {
   border-radius: 30%; }
 
 .about {
-  padding-top: 30px; }
+  padding-top: 30px;
+  font-size: 1.5rem; }
 
 .photo {
   margin: 0 !important; }
+
+.main-footer {
+  height: 60px; }
 
 @media (max-width: 600px) {
   nav a.brand-logo {
