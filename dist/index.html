@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+  crossorigin="anonymous"></script>
   <!--Import materialize.css-->
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
@@ -24,15 +27,17 @@
           <a href="" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
           <a href="#" class="brand-logo"><i class="material-icons">all_inclusive</i>Pranita Gandhi</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a class="item" href="#">Home</a></li>
-            <li><a class="item" href="#">About</a></li>
-            <li><a class="item" href="#">Skills</a></li>
-            <li><a class="item" href="#">Projects</a></li>
-            <li><a class="item" href="#">Contact</a></li>
+            <li><a class="waves-effect waves-light item" href="#">Home</a></li>
+            <li><a class="waves-effect waves-light item" href="#">About</a></li>
+            <li><a class="waves-effect waves-light item" href="#">Skills</a></li>
+            <li><a class="waves-effect waves-light item" href="#">Projects</a></li>
+            <li><a class="waves-effect waves-light item" href="#">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
+    <!-- End of Navigation Bar -->
 
     <!-- Side Navbar -->
 
@@ -56,6 +61,8 @@
     </ul>
   </div>
 
+  <!-- End of Side Nav -->
+
   <!-- Showcase -->
   <section id="showcase">
     <div class="container">
@@ -64,12 +71,12 @@
 
   <!-- About Me -->
   
-  <section id="contact" class="section section-contact">
+  <section id="contact">
     <h1 class= "heading">About Me</h1>
     <div class="container">
       <div class="row photo">       
         <div class="col s12 m6">         
-         <img class="pranita about" src="img/photop.jpg" alt="">
+         <img class="responsive-img pranita about" src="img/photop.jpg" alt="">
          </div>
         <div class="col s12 m6">
           <p class="about">Hi, I am Pranita Gandhi. I have completed a <a href="">Diploma in Full Stack Web Development
@@ -79,16 +86,87 @@
 
          <p class= "about">Additionally to coding I love cycling, running and sketching in my free time.</p>   
     </div>
+    </div>
   </section>
-  <!-- Top three skills -->
+
+  <!-- Top skills -->
   
-  
+  <section id="skills">
+    <h1 class="heading text center">Skills</h1>
+    <div class="container">
+      <div class="row">
+        <div class = "col s12 m4 cblock">
+          <div class="card black">
+            <div class="card-content white-text">
+              <span class="card-title text center">Front-End</span>
+            </div>
+            <ul class=" text center white-text">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>jQuery</li> 
+              <li>Bootstrap</li>
+              <li>Materialize</li>                       
+            </ul>            
+          </div>
+        </div>  
+        <div class = "col s12 m4">
+          <div class="card black">
+            <div class="card-content white-text">
+              <span class="card-title text center">Back-End</span>
+            </div>
+            <ul class=" text center white-text">
+              <li>Python</li>
+              <li>FLask</li>
+              <li>Django</li>                                      
+            </ul>            
+          </div>
+        </div> 
+        <div class = "col s12 m4">
+          <div class="card black">
+            <div class="card-content white-text">
+              <span class="card-title text center">Deployment, Storage and Version Control</span>
+            </div>
+            <ul class="text center white-text">
+              <li>Git and GitHub</li>
+              <li>AWS S3 Storage</li>
+              <li>Heroku</li>                                      
+            </ul>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
 
 
   <!-- List of skills - front-end and backend -->
+
+
+
+
   <!-- Footer -->
   <footer class="main-footer black white-text center">
-    <p class="flow-text">Pranita Gandhi &copy; 2020</p>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6">
+          <p class="flow-text">Pranita Gandhi &copy;2020</p>
+        </div>
+        <div class="col s12 m6 social-links">        
+          <a href="#" class="white-text">
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="#" class="white-text">
+            <i class="fab fa-github fa-2x"></i>
+          </a>        
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!--jQuery -->
