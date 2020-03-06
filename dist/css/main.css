@@ -55,6 +55,22 @@ nav a.item {
 
 #skills {
   background-color: #d3d3d3; }
+  #skills .heading-skills {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 !important; }
+  #skills .chip {
+    padding: 0 65px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #000;
+    margin: 10px 15px 20px 10px; }
+  #skills .chip-img {
+    margin-top: 10px; }
+  #skills .skills-set {
+    margin-bottom: 0; }
 
 .flip-card {
   background-color: transparent;
