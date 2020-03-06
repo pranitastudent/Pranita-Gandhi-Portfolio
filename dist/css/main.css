@@ -1,3 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+body {
+  font-family: "Ubuntu", sans-serif; }
+
+nav a.item:hover {
+  background-color: #034f84; }
+
+nav a.item {
+  text-decoration: none;
+  font-size: 1.2rem; }
+
+.sidenav {
+  background-color: #fff !important; }
+
+#showcase {
+  position: relative;
+  background: url(../img/pranita.png) no-repeat center center/cover;
+  min-height: 500px; }
+
+#contact {
+  background-color: #d6cbd3; }
+
+.pranita {
+  border-radius: 30%; }
+
+.about {
+  padding-top: 30px; }
+
+.photo {
+  margin: 0 !important; }
+
 @media (max-width: 600px) {
   nav a.brand-logo {
-    font-size: 1.1rem; } }
+    font-size: 1.1rem; }
+  #showcase {
+    min-height: 200px; }
+  .pranita {
+    width: 100%; } }
