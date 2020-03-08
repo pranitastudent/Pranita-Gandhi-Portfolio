@@ -103,18 +103,32 @@ a.item {
        
     }
 
-    .social-links {
+    .social {
         padding-top:10px;
-               
+                         
         
     }
 
-      
-    .white-text {
-       margin-right: 15px;
-    }
-   
+    
 }
+
+// Social Icons
+
+.social a {
+    color:#fff;
+    margin-right: 1em;
+    
+}
+
+.social a :hover {
+     color: $primary;
+     transition: all 0.35s ease-in-out;
+     -moz-transition: all 0.35s ease-in-out;
+     -webkit-transition: all 0.35s ease-in-out;
+     -o-transition: all 0.35s ease-in-out;
+ }
+
+ 
 
 // Skills
 
@@ -155,8 +169,20 @@ a.item {
         margin-top:0;
         padding: 10px;
     }
+
     
 }
+
+// Buttons
+.btn {
+    background-color: #000;
+}
+
+
+.btn:hover {
+    background-color:$primary;
+}
+
 
 // Flip- adapted from WS Schools
 
@@ -178,18 +204,18 @@ a.item {
         font-size: 2rem;
         font-weight: 400;
     }
-    
-         
+           
 }
 .card-btn {
     border-radius:10px;
 }
 
+.img-card {
+    border-radius: 10px;
+}
 
 
-
-
-  
+// Flip
  
   /* Do an horizontal flip when you move the mouse over the flip box container */
 
@@ -217,6 +243,17 @@ a.item {
    transform: rotateY(180deg);
   }
 
+// Contact Form
+
+#contact-form {
+    background-color: #ebfff1;
+
+    .heading-contact {
+        margin-top:0;
+        padding-top:1.8rem;
+    }
+}
+
 // Media Queries
 
 @media(max-width:600px){
@@ -242,11 +279,10 @@ a.item {
 }
 
 // Ipad landscape
-@media only screen and (max-width: 1366px) {
 
-   .row .col.xl3 {
-        width: 50%;
-        
-    }
-
+@media(min-width: 1000px)and(max-width:1500px) {
+.row .col.l3 {
+    width: 50%;
+    
+}
 }

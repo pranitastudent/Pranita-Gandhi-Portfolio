@@ -52,10 +52,19 @@ nav a.item {
   .main-footer .flow-text {
     padding-top: 10px;
     flex: 1; }
-  .main-footer .social-links {
+  .main-footer .social {
     padding-top: 10px; }
-  .main-footer .white-text {
-    margin-right: 15px; }
+
+.social a {
+  color: #fff;
+  margin-right: 1em; }
+
+.social a :hover {
+  color: #034f84;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out; }
 
 #skills {
   background-color: #d3d3d3; }
@@ -83,6 +92,12 @@ nav a.item {
     margin-top: 0;
     padding: 10px; }
 
+.btn {
+  background-color: #000; }
+
+.btn:hover {
+  background-color: #034f84; }
+
 .flip-card {
   background-color: transparent;
   width: 300px;
@@ -100,6 +115,9 @@ nav a.item {
     font-weight: 400; }
 
 .card-btn {
+  border-radius: 10px; }
+
+.img-card {
   border-radius: 10px; }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -123,6 +141,12 @@ nav a.item {
 .flip-card-back {
   transform: rotateY(180deg); }
 
+#contact-form {
+  background-color: #ebfff1; }
+  #contact-form .heading-contact {
+    margin-top: 0;
+    padding-top: 1.8rem; }
+
 @media (max-width: 600px) {
   nav a.brand-logo {
     font-size: 1.1rem; }
@@ -133,6 +157,6 @@ nav a.item {
   #showcase {
     min-height: 400px; } }
 
-@media only screen and (max-width: 1366px) {
-  .row .col.xl3 {
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .row .col.l3 {
     width: 50%; } }
