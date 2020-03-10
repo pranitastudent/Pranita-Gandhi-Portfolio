@@ -155,6 +155,8 @@ nav a.item {
   #contact .heading-contact {
     margin-top: 0;
     padding-top: 1.8rem; }
+  #contact .form-contact {
+    padding: 2em; }
 
 .main-footer {
   height: 130px;
@@ -205,3 +207,11 @@ nav a.item {
 @media only screen and (max-width: 1030px) {
   .flow-text {
     font-size: 1.5rem; } }
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 98%; }
+  body {
+    overflow-x: hidden; }
+  .images {
+    margin-left: 17px; } }

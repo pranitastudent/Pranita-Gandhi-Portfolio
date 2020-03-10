@@ -263,8 +263,13 @@ a.item {
         margin-top:0;
         padding-top:1.8rem;
     }
+
+    .form-contact {
+        padding: 2em;
+    }
    
 }
+
 
 // Footer
 
@@ -353,4 +358,18 @@ a.item {
 .flow-text {
     font-size: 1.5rem;
 }
+}
+
+@media only screen and (min-width: 993px) {
+.container {
+    width: 98%;
+}
+ body {
+     overflow-x: hidden;
+ }
+
+ .images {
+     margin-left:17px;
+ }
+
 }
