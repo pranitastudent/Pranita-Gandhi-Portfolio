@@ -15,12 +15,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
-  <title>Pranita Gandhi | Portfolio</title>
+ 
+  <title>Pranita Gandhi | Portfolio</title> 
 </head>
 
-<body>
-  <!-- Navbar -->
+<body id="home" class="scrollspy">
 
+  <!-- Navbar -->
   <div class="navbar-fixed">
     <nav class="black">
       <div class="container">
@@ -28,51 +29,51 @@
           <a href="" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
           <a href="#" class="brand-logo"><i class="material-icons">all_inclusive</i>Pranita Gandhi</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a class="waves-effect waves-light item" href="#">Home</a></li>
-            <li><a class="waves-effect waves-light item" href="#">About</a></li>
-            <li><a class="waves-effect waves-light item" href="#">Skills</a></li>
-            <li><a class="waves-effect waves-light item" href="#">Projects</a></li>
-            <li><a class="waves-effect waves-light item" href="#">Contact</a></li>
+            <li><a class="waves-effect waves-light item" href="#home">Home</a></li>
+            <li><a class="waves-effect waves-light item" href="#about">About</a></li>
+            <li><a class="waves-effect waves-light item" href="#skills">Skills</a></li>
+            <li><a class="waves-effect waves-light item" href="#projects">Projects</a></li>
+            <li><a class="waves-effect waves-light item" href="#contact">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- End of Navigation Bar -->
-
-    <!-- Side Navbar -->
-
-    <ul id="slide-out" class="side-nav">
-      <li>
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Skills</a>
-      </li>
-      <li>
-        <a href="#">Projects</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
   </div>
+
+  <!-- End of Navigation Bar -->
+
+  <!-- Side Navbar -->
+
+  <ul id="slide-out" class="side-nav">
+
+    <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#skills">Skills</a>
+    </li>
+    <li>
+      <a href="#projects">Projects</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+
 
   <!-- End of Side Nav -->
 
   <!-- Showcase -->
-  <section id="showcase">
+  <section id="home" class="section section-home scrollspy">
     <div class="container">
     </div>
   </section>
 
   <!-- About Me -->
 
-  <section id="contact">
+  <section id="about" class="section section-about scrollspy">
     <h1 class="heading">About Me</h1>
     <div class="container">
       <div class="row photo">
@@ -80,24 +81,27 @@
           <img class="responsive-img pranita about" src="img/photop.jpg" alt="">
         </div>
         <div class="col s12 m6">
-          <p class="about">Hi, I am Pranita Gandhi. I have completed a <a href="">Diploma in Full Stack Web Development
+          <p class="about">Hi, I am Pranita Gandhi. I have completed a <a class="diploma" href="#">Diploma in Full Stack Web Development
               from Code Institute</a> . I am former Biochemistry/Research Technician who loves problem solving and
             troubleshooting
             experiments. I am confident in Front-End and Back-End Technologies which include : HTML, CSS , JavaScript,
             jQuery, GitHub
-            Bootstrap and Materialize. Back-End Technologies include : Python, Django, Flask, Heroku. Please see my <a
-              href="#">Projects</a> which contain front-end and back-end technologies</p>
-
+            Bootstrap and Materialize. Back-End Technologies include : Python, Django, Flask, Heroku. Please see my
+            <a class ="projects" href="https://github.com/pranitastudent">Projects</a>&nbsp;which contain front-end and back-end technologies
+          </p>
           <p class="about">Additionally to coding I love cycling, running and sketching in my free time.</p>
         </div>
       </div>
+
+      <!-- Back to The Top Button -->
+
+      <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
   </section>
+
 
   <!-- Top skills -->
 
-
-
-  <section id="skills">
+  <section id="skills" class="section section-skills scrollspy">
     <h1 class="heading-skills text center">Skills</h1>
     <div class="container">
       <div class="row skills-set">
@@ -107,22 +111,27 @@
             HTML
           </div>
           <div class="chip white-text">
-            
+            <img class="chip-img" src="img/css-3.png" alt="CSS">
             CSS
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/javascript.png" alt="JavaScript">
             JavaScript
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/jquery.png" alt="jQuery">
             jQuery
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/git.png" alt="Git">
             Git
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/github.png" alt="GitHub">
             GitHub
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/python.png" alt="Python">
             Python
           </div>
           <div class="chip white-text">
@@ -134,152 +143,182 @@
             Flask
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/heroku.png" alt="Heroku">
             Heroku
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/amazon.png" alt="Amazon">
             AWS S3
           </div>
           <div class="chip white-text">
+            <img class="chip-img" src="img/microsoft.png" alt="Visual Studio Code">
             VS Code
           </div>
-
         </div>
       </div>
     </div>
+
+
   </section>
 
 
   <!-- Projects -->
-  <section id="projects">
+
+  <section id="projects" class="section section-projects scrollspy">
     <h1 class="heading-projects text center">Projects</h1>
     <div class="container">
       <div class="row">
         <div class="col s12 m6 l3 ipad">
-           <div class="flip-card">
+          <div class="flip-card">
             <div class="flip-card-inner">
               <div class="flip-card-front">
-                <h2 class = "text center card-title">The Who</h2>                
+                <h2 class="text center card-title">The Who</h2>
                 <img class="responsive-img img-card" src="img/who.png" alt="The Who">
-                
+
               </div>
               <div class="flip-card-back">
-                <h2 class= "text center card-title">The Who</h2>
-                <h4>Front-End Static Site </h4> 
-                <h5 class="card-technologies">HTML/CSS</h5>             
+                <h2 class="text center card-title">The Who</h2>
+                <h4>Front-End Static Site </h4>
+                <h5 class="card-technologies">HTML/CSS</h5>
               </div>
             </div>
           </div>
-          <a href="https://pranitastudent.github.io/Milestone-project/" class="btn card-btn waves-effect waves-light">View Site</a>
-          <a href="https://github.com/pranitastudent/Milestone-project" class="btn card-btn  waves-effect waves-light">View Code</a>          
-          </div> 
-          <div class="col s12 m6 l3 ipad">
-            <div class="flip-card">
-             <div class="flip-card-inner">
-               <div class="flip-card-front">
-                 <h2 class = "text center card-title">Exam Dashboard</h2>                
-                 <img class="responsive-img img-card" src="img/exam.png" alt="Exam Dashboard">
-                 
-               </div>
-               <div class="flip-card-back">
-                 <h2 class= "text center card-title">Exam Dashboard</h2>
-                 <h4>Front-End Static Site </h4> 
-                 <h5 class="card-technologies">HTML/CSS/Javascript<br>/d3/dc/crossfilter</h5>             
-               </div>
-             </div>
-           </div>
-           <a href="https://pranitastudent.github.io/Milestone-Second/" class="btn  card-btn waves-effect waves-light">View Site</a>
-           <a href="https://github.com/pranitastudent/Milestone-Second" class="btn  card-btn waves-effect waves-light">View Code</a>          
-           </div> 
-           <div class="col s12 m6 l3 ipad">
-            <div class="flip-card">
-             <div class="flip-card-inner">
-               <div class="flip-card-front">
-                 <h2 class = "text center card-title">Guju-FODMAP</h2>                
-                 <img class="responsive-img img-card" src="img/guju.png" alt="Guju FODMAP Cookbook">
-                 
-               </div>
-               <div class="flip-card-back">
-                 <h2 class= "text center card-title">Guju FODMAP</h2>
-                 <h4>Back-End Python/Flask Site </h4> 
-                 <h5 class="card-technologies">Python/Flask/Jinja<br>Heroku</h5>             
-               </div>
-             </div>
-           </div>
-           <a href="http://guju-cookbook-fodmap.herokuapp.com/" class="btn  card-btn waves-effect waves-light">View Site</a>
-           <a href="https://github.com/pranitastudent/Milestone_4_project" class="btn card-btn waves-effect waves-light">View Code</a>          
-           </div> 
-           <div class="col s12 m6 l3 ipad ">
-            <div class="flip-card">
-             <div class="flip-card-inner">
-               <div class="flip-card-front">
-                 <h2 class = "text center card-title">Pranita's T-shirt Shop</h2>                
-                 <img class="responsive-img img-card" src="img/tshirt.png" alt="Pranita's T-shirt Shop">
-                 
-               </div>
-               <div class="flip-card-back">
-                 <h2 class= "text center card-title"></h2>
-                 <h4>Back-End Python/Django Site </h4> 
-                 <h5 class="card-technologies">Python/Django/Jinja/AWS S3<br>Heroku</h5>             
-               </div>
-             </div>
-           </div>
-           <a href="https://pranita-tshirt-shop.herokuapp.com/" class="btn  card-btn waves-effect waves-light">View Site</a>
-           <a href="https://github.com/pranitastudent/Milestone_5_project" class="btn card-btn waves-effect waves-light">View Code</a>          
-           </div> 
-         </div>
-        </div>   
+          <a href="https://pranitastudent.github.io/Milestone-project/"
+            class="btn card-btn waves-effect waves-light">View Site</a>
+          <a href="https://github.com/pranitastudent/Milestone-project"
+            class="btn card-btn  waves-effect waves-light">View Code</a>
+        </div>
+        <div class="col s12 m6 l3 ipad">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2 class="text center card-title">Exam Dashboard</h2>
+                <img class="responsive-img img-card" src="img/exam.png" alt="Exam Dashboard">
+              </div>
+              <div class="flip-card-back">
+                <h2 class="text center card-title">Exam Dashboard</h2>
+                <h4>Front-End Static Site </h4>
+                <h5 class="card-technologies">HTML/CSS/Javascript<br>/d3/dc/crossfilter</h5>
+              </div>
+            </div>
+          </div>
+          <a href="https://pranitastudent.github.io/Milestone-Second/"
+            class="btn  card-btn waves-effect waves-light">View Site</a>
+          <a href="https://github.com/pranitastudent/Milestone-Second"
+            class="btn  card-btn waves-effect waves-light">View Code</a>
+        </div>
+        <div class="col s12 m6 l3 ipad">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2 class="text center card-title">Guju-FODMAP</h2>
+                <img class="responsive-img img-card" src="img/guju.png" alt="Guju FODMAP Cookbook">
+
+              </div>
+              <div class="flip-card-back">
+                <h2 class="text center card-title">Guju FODMAP</h2>
+                <h4>Back-End Python/Flask Site </h4>
+                <h5 class="card-technologies">Python/Flask/Jinja<br>Heroku</h5>
+              </div>
+            </div>
+          </div>
+          <a href="http://guju-cookbook-fodmap.herokuapp.com/" class="btn  card-btn waves-effect waves-light">View
+            Site</a>
+          <a href="https://github.com/pranitastudent/Milestone_4_project"
+            class="btn card-btn waves-effect waves-light">View Code</a>
+        </div>
+        <div class="col s12 m6 l3 ipad ">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <h2 class="text center card-title">Pranita's T-shirt Shop</h2>
+                <img class="responsive-img img-card" src="img/tshirt.png" alt="Pranita's T-shirt Shop">
+              </div>
+              <div class="flip-card-back">
+                <h2 class="text center card-title"></h2>
+                <h4>Back-End Python/Django Site </h4>
+                <h5 class="card-technologies">Python/Django/Jinja/AWS S3<br>Heroku</h5>
+              </div>
+            </div>
+          </div>
+          <a href="https://pranita-tshirt-shop.herokuapp.com/" class="btn  card-btn waves-effect waves-light">View
+            Site</a>
+          <a href="https://github.com/pranitastudent/Milestone_5_project"
+            class="btn card-btn waves-effect waves-light">View Code</a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Contact -->
 
-   <section id="contact-form">
+  <section id="contact" class="section section-contact scrollspy">
     <h1 class="heading-contact text center">Contact</h1>
     <div class="container">
       <div class="row">
-        <div class="col s12 m6 offset-m3">         
         <div class="card-panel grey lighten-3">
-            <h5 class="text center">Like my work ...Contact Me!</h5>
+          <h5 class="text center">Like my work ...Contact Me!</h5>
+          <div class="error"></div>
+            <form id ="myForm" onsubmit="return sendMail(this);">
             <div class="input-field">
-              <input type="text" placeholder="Name">
+              <i class="material-icons prefix">account_circle</i>
+              <input type="text" id="name" placeholder="Name" name="name" class="validate">
+
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Email">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" name="email" class="validate">
+         
             </div>
             <div class="input-field">
-              <input type="text" placeholder="Phone">
+              <i class="material-icons prefix">phone</i>
+              <input type="number" id="phone" placeholder="phone" name="phone" class="validate">
+            
             </div>
             <div class="input-field">
-              <textarea class="materialize-textarea text-darken-2" placeholder="Enter Message"></textarea>
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea class="materialize-textarea text-darken-2" name="message" id="message"
+                placeholder="Enter Message" class="validate"></textarea></textarea>
             </div>
-            <input type="submit" value="Submit" class="btn submit-button waves-effect">
-          </div>
-         </div>
+            <input type="submit" value="submit" class="btn submit-button">
+          </form>
+        </div>
+      </div>
     </div>
   </section>
-  
+
+
   <!-- Footer -->
   <footer class="main-footer black white-text center">
     <div class="container">
       <div class="row">
-        <div class="col s12 m6">
-          <p class="flow-text">Pranita Gandhi &copy;2020</p>
+        <div class="col s12 m6 l4">
+          <p class="flow-text"><i class="far fa-envelope"></i>&nbsp;&nbsp;pranita_gandhi@hotmail.com</p>
         </div>
-        <div class="col s12 m6">
+
+        <div class="col s12 m3 l4">
+          <p class="flow-text">Pranita Gandhi &copy;2020</p>
+          Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> 
+        </div>
+
+        <div class="col s12 m3 l4">
           <div class="social">
-              <a href="https://twitter.com/?lang=en-gb">
-                  <i class="fab fa-twitter fa-2x"></i>
-              </a>
-              <a href="https://en-gb.facebook.com/">
-                  <i class="fab fa-facebook fa-2x"></i>
-              </a>
-              <a href="https://www.instagram.com/">
-                  <i class="fab fa-instagram fa-2x"></i>
-              </a>
-              <a href="https://github.com/pranitastudent">
-                  <i class="fab fa-github fa-2x"></i>
-              </a>
+            <a href="https://twitter.com/?lang=en-gb">
+              <i class="fab fa-twitter fa-2x"></i>
+            </a>
+
+            <a href="https://en-gb.facebook.com/">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/">
+              <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://github.com/pranitastudent">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
           </div>
-      </div>
+
+        </div>
       </div>
     </div>
   </footer>
@@ -291,6 +330,9 @@
   <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Email JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+
   <!-- Custom JavaScript -->
   <script src="js/app.js"></script>
 </body>

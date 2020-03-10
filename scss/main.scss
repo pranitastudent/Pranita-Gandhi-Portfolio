@@ -18,6 +18,7 @@ $font-family: 'Ubuntu', sans-serif;
 
 body {
     font-family: $font-family;  
+    overflow-x:hidden;
    
 }
 
@@ -53,7 +54,7 @@ a.item {
 
 // Showcase
 
-#showcase {
+#home {
     position:relative;
     background: url(../img/pranita.png) no-repeat center center/cover;
     min-height:500px;
@@ -61,7 +62,7 @@ a.item {
 
 // About
 
-#contact {
+#about {
     background-color: $secondary;
     padding: 20px;
 
@@ -72,8 +73,23 @@ a.item {
         margin: 0;
         
     }
+    .projects {
+        color: $primary;
+    }
     
+    .projects:hover {
+        color:red;
+    } 
+
+    .diploma {
+        color:$primary;
+    }
+    
+    .diploma:hover {
+        color:red;
+    }
 }
+
 
 .pranita {
     border-radius: 30%;    
@@ -88,35 +104,14 @@ a.item {
     margin: 0!important;
 }
 
-// Footer
 
-.main-footer {
- 
-    height:100px;
-    display: flex;
-    align-items: center;
-
-
-    .flow-text {
-        padding-top:10px;
-        flex:1;
-       
-    }
-
-    .social {
-        padding-top:10px;
-                         
-        
-    }
-
-    
-}
 
 // Social Icons
 
 .social a {
     color:#fff;
-    margin-right: 1em;
+   
+    margin-right: 1.5em;
     
 }
 
@@ -128,7 +123,9 @@ a.item {
      -o-transition: all 0.35s ease-in-out;
  }
 
- 
+
+
+
 
 // Skills
 
@@ -148,6 +145,8 @@ a.item {
         border-radius: 25px;
         background-color: #000;
         margin: 10px 15px 20px 10px;
+        cursor: pointer;
+        
     }
 
     .chip-img {
@@ -157,6 +156,17 @@ a.item {
     .skills-set {
         margin-bottom:0;
     }
+}
+
+.chip {
+    transform:rotate(0deg);
+   transition: transform 0.5s ease;
+}
+
+
+.chip:hover{
+    transition: transform 1s ease;
+    transform: rotate(360deg);
 }
 
 // Projects
@@ -231,6 +241,7 @@ a.item {
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    cursor: pointer;
   }
   
   /* Style the front side (fallback if image is missing) */
@@ -245,13 +256,52 @@ a.item {
 
 // Contact Form
 
-#contact-form {
+#contact {
     background-color: #ebfff1;
 
     .heading-contact {
         margin-top:0;
         padding-top:1.8rem;
     }
+   
+}
+
+// Footer
+
+.main-footer {
+ 
+    height:130px;
+    display: flex;
+    align-items: center;
+
+
+    .flow-text {
+        padding-top:10px;
+       flex:1;     
+    }
+
+    .social {
+        padding-top:10px;
+                         
+        
+    }    
+}
+
+// Back to Top button
+
+#topBtn {
+    position: fixed;
+    bottom: 100px;
+    right:40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    opacity:0.9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    background-color: $primary;
 }
 
 // Media Queries
@@ -264,16 +314,26 @@ a.item {
        
     }  
 
-    #showcase {
+    #home {
         min-height:156px;
     }
-
                
+}
+
+@media(max-width:670px){
+    #topBtn {
+        height: 30px;
+        width:25px;
+        right:10px;
+    }
+    .main-footer {
+        height: 180px;
+    }
 }
 
 @media(min-width:700px)and(max-width:1024px){
    
-    #showcase {
+    #home {
         min-height:400px;
     }
 }
@@ -284,5 +344,13 @@ a.item {
 .row .col.l3 {
     width: 50%;
     
+}
+}
+
+// Ipad Vertical
+
+@media only screen and (max-width: 1030px) {
+.flow-text {
+    font-size: 1.5rem;
 }
 }
