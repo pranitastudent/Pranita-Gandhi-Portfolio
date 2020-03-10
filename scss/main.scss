@@ -124,9 +124,6 @@ a.item {
  }
 
 
-
-
-
 // Skills
 
 #skills {
@@ -275,7 +272,7 @@ a.item {
 
 .main-footer {
  
-    height:130px;
+    height:150px;
     display: flex;
     align-items: center;
 
@@ -332,6 +329,12 @@ a.item {
         right:10px;
     }
     .main-footer {
+        height: 300px;
+    }
+}
+
+@media(min-width:700px)and(max-width:1200px) {
+    .main-footer {
         height: 180px;
     }
 }
@@ -360,16 +363,20 @@ a.item {
 }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 768px)and(max-width:1035px) {
 .container {
     width: 98%;
 }
  body {
      overflow-x: hidden;
  }
-
- .images {
-     margin-left:17px;
+.images {
+    margin-left: 20px;
+} 
  }
 
+@media only screen and (min-width: 768px)and(max-width:790px) {
+.row .col.m3 {
+    width: 50%;
+}
 }
