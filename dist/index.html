@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/main.css">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="img/photop.jpg">
+
 
   <title>Pranita Gandhi | Portfolio</title>
 </head>
@@ -45,9 +48,9 @@
   <!-- Side Navbar -->
 
   <ul id="slide-out" class="side-nav">
-  <li>  
-    <a href="#home">Home</a>
-  </li>
+    <li>
+      <a href="#home">Home</a>
+    </li>
     <li>
       <a href="#about">About</a>
     </li>
@@ -77,10 +80,45 @@
     <h1 class="heading">About Me</h1>
     <div class="container">
       <div class="row photo">
-        <div class="col s12 m6">
+
+        <!-- Work History -->
+        <div class="col s12 m4 work-history">
+          <h3 class="history-heading uppercase">Work History</h3>
+          <div class="history-items">
+          <div class="timeline-item">
+            <h5>UCL Institute of Opthalmology</h5>
+            <p>Research Technician</p><br>
+            <p>02/2009 - 12/2011</p>
+          </div>
+          <div class="timeline-item">
+            <h5>UCL Department of Epidemiology and Public Health</h5>
+            <p>Data Administration Assistant</p><br>
+            <p>01/2012 - 03/2013</p>
+          </div>
+          <div class="timeline-item">
+            <h5>West Thames College</h5>
+            <p>Laboratory Physics Technician</p><br>
+            <p>08/2013 - 06/2016</p>
+          </div>
+          <div class="timeline-item">
+            <h5>St Marys University</h5>
+            <p>Biochemistry Technician</p><br>
+            <p>09/2016 - 09/2017</p>
+          </div>
+          <div class="timeline-item">
+            <h5>Richmond Upon Thames College</h5>
+            <p>Attendance Administrator</p><br>
+            <p>01/2019 - 11/2019</p>
+          </div>
+        </div>
+      </div>
+   
+
+      <!-- Photo and about me -->
+        <div class="col s12 m4">
           <img class="responsive-img pranita about" src="img/photop.jpg" alt="">
         </div>
-        <div class="col s12 m6">
+        <div class="col s12 m4">
           <p class="about">Hi, I am Pranita Gandhi. I have completed a <a class="diploma" href="#">Diploma in Full Stack
               Web Development
               from Code Institute</a> . I am former Biochemistry/Research Technician who loves problem solving and
@@ -93,12 +131,12 @@
           </p>
           <p class="about">Additionally to coding I love cycling, running and sketching in my free time.</p>
         </div>
-        </div>
       </div>
+    </div>
 
-      <!-- Back to The Top Button -->
+    <!-- Back to The Top Button -->
 
-      <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
+    <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
   </section>
 
 
@@ -154,8 +192,20 @@
             AWS S3
           </div>
           <div class="chip white-text">
-            <img class="chip-img" src="img/microsoft.png" alt="Visual Studio Code">
+            <img class="chip-img" src="img/visual.jpg" alt="Visual Studio Code">
             VS Code
+          </div>
+           <div class="chip white-text">
+            <img class="chip-img" src="img/boostrap.png" alt="Bootstrap">
+            Bootstrap
+          </div>
+          <div class="chip white-text">
+            <img class="chip-img" src="img/materialize.png" alt="Materialize">
+            Materialize
+          </div>
+          <div class="chip white-text">
+            <img class="chip-img" src="img/balsamiq.png" alt="Balsamiq">
+            Balsamiq
           </div>
         </div>
       </div>
@@ -280,7 +330,7 @@
             <div class="input-field">
               <i class="material-icons prefix">mode_edit</i>
               <textarea class="materialize-textarea text-darken-2" name="message" id="message"
-                placeholder="Enter Message" class="validate"required></textarea>
+                placeholder="Enter Message" class="validate" required></textarea>
             </div>
             <input type="submit" value="submit" class="btn submit-button">
           </form>
@@ -306,7 +356,7 @@
         <div class="col s12 m3 l4">
           <h5 class="uppercase">Download My CV</h5>
           <p class="inline-block">
-          <a href="cv/pranita.pdf" class="cv-pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
+            <a href="cv/pranita.pdf" class="cv-pdf"><i class="fa fa-download fa-2x" aria-hidden="true"></i></a>
           </p>
         </div>
 

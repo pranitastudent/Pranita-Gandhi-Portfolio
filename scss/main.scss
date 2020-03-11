@@ -19,6 +19,7 @@ $font-family: 'Ubuntu', sans-serif;
 body {
     font-family: $font-family;  
     overflow-x:hidden;
+    
    
 }
 
@@ -104,6 +105,48 @@ a.item {
     margin: 0!important;
 }
 
+/* Work History */
+
+.history-heading {
+        margin-bottom:1.5em;
+}
+
+.timeline-item {
+        padding: 2em 2em 0em 2em;
+        position: relative;
+        color: #000;
+        border-left: 1px solid;
+        .timeline-item p {
+            padding: 0;
+            margin: 0;
+    }
+}
+    
+
+    
+.timeline-item::before {
+        content: attr(data-dates);
+        position: absolute;
+        left: 2.5em;
+        top: 3em;
+        display: block;
+        font-weight: 500;
+        font-size: .8em;
+        padding: 0;
+        margin: 0;
+}
+    
+.timeline-item::after {
+        width: 12px;
+        height: 12px;
+        display: block;
+        top: 2.4em;
+        position: absolute;
+        left: -6px;
+        border-radius: 12px;
+        content: '';
+        background: #000;
+}
 
 
 // Social Icons
@@ -364,15 +407,18 @@ a.item {
 }
 
 @media only screen and (min-width: 768px)and(max-width:1035px) {
+
 .container {
     width: 98%;
 }
  body {
      overflow-x: hidden;
+    
  }
-.images {
-    margin-left: 20px;
-} 
+ .container .row {
+    margin-left: 2.25rem;
+    margin-right: -.75rem;
+}
  }
 
 @media only screen and (min-width: 768px)and(max-width:790px) {
