@@ -13,7 +13,7 @@ body {
 /* Row reset */
 .row {
   margin-bottom: 0;
-  padding-bottom: 20px; }
+  padding-bottom: 1.25rem; }
 
 /* Navigation Bar */
 nav a.item:hover {
@@ -71,8 +71,11 @@ nav a.item {
   padding-top: 30px;
   font-size: 1.5rem; }
 
-.photo {
-  margin: 0 !important; }
+/* Soft Skills */
+li {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  list-style-type: square !important; }
 
 /* Work History */
 .history-heading {
@@ -125,8 +128,8 @@ nav a.item {
 #skills {
   background-color: #d3d3d3; }
   #skills .heading-skills {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
     margin: 0 !important; }
   #skills .chip {
     padding: 0 65px;
@@ -135,10 +138,10 @@ nav a.item {
     line-height: 50px;
     border-radius: 25px;
     background-color: #000;
-    margin: 10px 15px 20px 10px;
+    margin: 0.6px 0.9rem 1.25rem 0.6rem;
     cursor: pointer; }
   #skills .chip-img {
-    margin-top: 10px; }
+    margin-top: 0.6rem; }
   #skills .skills-set {
     margin-bottom: 0; }
 
@@ -153,10 +156,10 @@ nav a.item {
 /* Projects */
 #projects {
   background-color: #e0eeee;
-  padding-bottom: 20px; }
+  padding-bottom: 1.5rem; }
   #projects .heading-projects {
     margin-top: 0;
-    padding: 10px; }
+    padding: 1rem; }
 
 /* Buttons */
 .btn {
@@ -170,7 +173,7 @@ nav a.item {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  margin-bottom: 100px; }
+  margin-bottom: 6.25rem; }
   .flip-card .flip-card-inner {
     position: relative;
     width: 100%;
@@ -220,10 +223,10 @@ nav a.item {
   display: flex;
   align-items: center; }
   .main-footer .flow-text {
-    padding-top: 10px;
+    padding-top: 1rem;
     flex: 1; }
   .main-footer .social {
-    padding-top: 10px; }
+    padding-top: 1rem; }
 
 /* Back to Top button */
 #topBtn {
@@ -293,3 +296,7 @@ nav a.item {
 @media only screen and (min-width: 768px) and (max-width: 790px) {
   .row .col.m3 {
     width: 50%; } }
+
+@media (min-width: 700px) {
+  .pranita {
+    margin-top: 10em; } }
