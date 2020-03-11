@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import 'config';
+@import 'utilities';
 
 * {
     box-sizing: border-box;
@@ -6,30 +8,6 @@
     padding: 0;
    
 }
-
-/* Root Variables */
-
-$primary:#034f84;
-$secondary: #d6cbd3;
-$tertiary: #d3d3d3;
-$font-family: 'Ubuntu', sans-serif;
-
-/* Body */
-
-body {
-    font-family: $font-family;  
-    overflow-x:hidden;
-    
-   
-}
-
-/* Row reset */
-
-.row {
-    margin-bottom: 0;
-    padding-bottom:1.25rem;
-}
-
 
 /* Navigation Bar */
 
@@ -53,11 +31,15 @@ a.item {
     
    }
 
+i.material-icons.close {
+    color:#ff0000!important;
+}   
+
 /* Showcase */
 
 #home {
     position:relative;
-    background: url(../img/showcase.jpg) no-repeat center center/cover;
+    background: url(../img/showcase2.webp) no-repeat center center/cover;
     min-height:600px;     
 
     .heading {
@@ -199,9 +181,8 @@ a.item {
     background-color:$tertiary;
 
     .heading-skills {
-        padding-top: 1.25rem;
-        padding-bottom:1.25rem;
-        margin:0!important;
+        margin-bottom:5rem;
+       
     }
     .chip {
         padding: 0 65px;

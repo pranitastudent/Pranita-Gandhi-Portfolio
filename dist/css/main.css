@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
-
 /* Root Variables */
+/* Row reset */
+.row {
+  margin-bottom: 0;
+  padding-bottom: 1.25rem; }
+
 /* Body */
 body {
   font-family: "Ubuntu", sans-serif;
   overflow-x: hidden; }
 
-/* Row reset */
-.row {
-  margin-bottom: 0;
-  padding-bottom: 1.25rem; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 /* Navigation Bar */
 nav a.item:hover {
@@ -27,10 +27,13 @@ nav a.item {
 .sidenav {
   background-color: #fff !important; }
 
+i.material-icons.close {
+  color: #ff0000 !important; }
+
 /* Showcase */
 #home {
   position: relative;
-  background: url(../img/showcase.jpg) no-repeat center center/cover;
+  background: url(../img/showcase2.webp) no-repeat center center/cover;
   min-height: 600px; }
   #home .heading {
     position: absolute;
@@ -128,9 +131,7 @@ nav a.item {
 #skills {
   background-color: #d3d3d3; }
   #skills .heading-skills {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    margin: 0 !important; }
+    margin-bottom: 5rem; }
   #skills .chip {
     padding: 0 65px;
     height: 50px;

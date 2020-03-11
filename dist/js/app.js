@@ -1,9 +1,17 @@
 // Side Bar Navigation
 
 $(document).ready(function(){
-  // Init Sidenav
-  $('.button-collapse').sideNav();
-});  
+  $('.button-collapse').sideNav({
+    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+ }
+ );
+ $('.collapsible').collapsible();
+}); 
+
+// Lazy load showcase image
+$(document).ready(function(){
+$("#home").lazyload();
+});
 
 // Card Flip
 $(document).ready(function(){
