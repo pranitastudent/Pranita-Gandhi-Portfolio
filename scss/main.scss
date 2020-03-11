@@ -7,14 +7,14 @@
    
 }
 
-// Root Variables
+/* Root Variables */
 
 $primary:#034f84;
 $secondary: #d6cbd3;
 $tertiary: #d3d3d3;
 $font-family: 'Ubuntu', sans-serif;
 
-// Body
+/* Body */
 
 body {
     font-family: $font-family;  
@@ -23,7 +23,7 @@ body {
    
 }
 
-// Row reset
+/* Row reset */
 
 .row {
     margin-bottom: 0;
@@ -31,7 +31,7 @@ body {
 }
 
 
-// Navigation Bar
+/* Navigation Bar */
 
 nav {
     a.item:hover {
@@ -46,22 +46,41 @@ a.item {
 
 }
 
-// Sidebar
+/* Sidebar */
 
 .sidenav {
     background-color: #fff!important;
     
    }
 
-// Showcase
+/* Showcase */
 
 #home {
     position:relative;
-    background: url(../img/pranita.png) no-repeat center center/cover;
-    min-height:500px;
+    background: url(../img/showcase.jpg) no-repeat center center/cover;
+    min-height:600px;     
+
+    .heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #content {
+        font-size: 8em;
+        font-weight: 400;
+        color: $secondary;
+    }
+
+    .lead {
+        font-size: 4em;
+        font-weight: 400;
+        color: $secondary;
+    }
 }
 
-// About
+/* About */
 
 #about {
     background-color: $secondary;
@@ -149,7 +168,7 @@ a.item {
 }
 
 
-// Social Icons
+/* Social Icons */
 
 .social a {
     color:#fff;
@@ -167,7 +186,7 @@ a.item {
  }
 
 
-// Skills
+/* Skills */
 
 #skills {
     background-color:$tertiary;
@@ -209,7 +228,7 @@ a.item {
     transform: rotate(360deg);
 }
 
-// Projects
+/* Projects */
 
 #projects {
     background-color: #e0eeee;
@@ -223,7 +242,8 @@ a.item {
     
 }
 
-// Buttons
+/* Buttons */
+
 .btn {
     background-color: #000;
 }
@@ -234,7 +254,7 @@ a.item {
 }
 
 
-// Flip- adapted from WS Schools
+/* Flip- adapted from WS Schools */
 
 .flip-card {
     background-color: transparent;
@@ -265,36 +285,31 @@ a.item {
 }
 
 
-// Flip
- 
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-
-  .flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
     
 
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+.flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
     cursor: pointer;
   }
   
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+ 
+.flip-card-front {
    color: #000; 
   }
   
-  /* Style the back side */
-  .flip-card-back {
+
+.flip-card-back {
    transform: rotateY(180deg);
   }
 
-// Contact Form
+/* Contact Form */
 
 #contact {
     background-color: #ebfff1;
@@ -311,7 +326,7 @@ a.item {
 }
 
 
-// Footer
+/* Footer */
 
 .main-footer {
  
@@ -332,7 +347,7 @@ a.item {
     }    
 }
 
-// Back to Top button
+/* Back to Top button */
 
 #topBtn {
     position: fixed;
@@ -349,7 +364,7 @@ a.item {
     background-color: $primary;
 }
 
-// Media Queries
+/* Media Queries */
 
 @media(max-width:600px){
     nav {
@@ -360,7 +375,19 @@ a.item {
     }  
 
     #home {
-        min-height:156px;
+        min-height:300px;
+
+        #content {
+            font-size: 4em;
+            font-weight: 400;
+            color: $secondary;
+        }
+    
+        .lead {
+            font-size: 2em;
+            font-weight: 400;
+            color: $secondary;
+        }
     }
                
 }
@@ -389,7 +416,7 @@ a.item {
     }
 }
 
-// Ipad landscape
+/* Ipad landscape */
 
 @media(min-width: 1000px)and(max-width:1500px) {
 .row .col.l3 {
@@ -398,7 +425,7 @@ a.item {
 }
 }
 
-// Ipad Vertical
+/* Ipad Vertical */
 
 @media only screen and (max-width: 1030px) {
 .flow-text {
