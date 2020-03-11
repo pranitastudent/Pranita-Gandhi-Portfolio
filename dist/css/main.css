@@ -226,6 +226,8 @@ i.material-icons.close {
   .main-footer .flow-text {
     padding-top: 1rem;
     flex: 1; }
+    .main-footer .flow-text .email {
+      color: #fff !important; }
   .main-footer .social {
     padding-top: 1rem; }
 
