@@ -1,4 +1,4 @@
-[Portfolio](https://pranita-gandhi.netlify.com/)
+[Portfolio Deployed](https://pranita-gandhi.netlify.com/)
 
 # Pranita Gandhi Portfolio
 
@@ -14,7 +14,7 @@
 <ul>
 <li>As a recruiter/user I should be able to view the website on all browsers and media types: desktop, laptops, mobiles and widescreen television screens without compromise in resolution or pixilation.</li>
 <li> As a recruiter/user I should be able to navigate easily through the website : Home, About, Skills, Projects and Contact divisions.</li>
-<li> As a recruiter/user I should be notified if the contact form has been submitted successfully.</li>
+<li> As a recruiter/user I should be notified if the contact form has been submitted successfully and error messages should appear if a required field is unfilled or the form is unsuccessful in submission.</li>
 </ul>
 
 ## Wireframes
@@ -34,7 +34,7 @@
 <li> Skills: The user is able to click on the fixed navbar or back-to the top button to return to the skills section. Each skill is a chip element. The user able to hover each image to spin it. </li>
 <li> Projects: The user is able to click on the fixed navbar or back-to the top button to return to the projects section. Each project is a card element which flips back and forth. The front side shows an image of the project and back end shows the technologies used. Underneath each card, two buttons are present : View Code and View Site for the user to view code  respectively.</li>
 <li>Contact: The user is able to click on the fixed navbar or back-to the top button to return to the contacts section. The contact form contains inbuilt html form validation and uses EmailJS to send data. Once the form is submitted an alert pops up to let the user know the form has been submitted.</li>
-<li> Back-to-the-top-button: User can scroll back to the top using the back to the top button </li> 
+<li> Back-to-the-top-button: User can scroll back to the top using the back to the top button. </li> 
 </ul>
 
 ### Features to implement
@@ -85,7 +85,6 @@
 
 <li><a href = "https://validator.w3.org/">WC3 Mark-up Validation Service</a></li> WC3 was used to validate HTML Code.
 <li><a href = "https://jigsaw.w3.org/css-validator/">WC3 CSS Validation Service</a></li> WC3 CSS was used to validate CSS Code.
-<li><a href ="https://pypi.org/project/autopep8/">autopep8</a></li> autopep8 was used confirm python code to the PEP8 standard. 
 <li><a href = "https://jshint.com/">JS Hint</a></li>JS Hint was used to validate JavaScript and JQuery.
 
 </ul>
@@ -140,5 +139,39 @@ The website was testing on the following devices and found to display code eleme
 <li> The recruiter/user is alerted if the form is submitted successfully and if the form fails to submit through alerts. </li>
 <li> The recruiter/user is able to view skills in a visually pleasingly way through spinning chip elements.</li>
 <li> The recruiter/user is able to view the code and site of the 2 Front-End projects and 2 Back-Projects. The user is able to easily grasp the main technologies used as shown on the back of each card and view a screenshot of the projects on the front of each card.</li>
-<ul>
+</ul>
+
+## Credits
+
+<p> All icons for the skills section are taken from :
+
+[Flaticon](https://www.flaticon.com/free-icons/picture) and :
+
+[Wikipedia](https://www.wikipedia.org/) </p>
+
+### References
+
+<ol>
+<li> The CSS for the flip cards are adapted from :
+
+[w3Schools.com](https://www.w3schools.com/howto/howto_css_flip_card.asp) </li>
+
+<li> The jQuery required for the side-nav and scrollspy if taken from:
+
+[Materialize](https://materializecss.com/)</li>
+
+<li> The JavaScript for the Typewriter effect on the heading in the home section is adapted from:
+
+[Traversy Media Pure JavaScript Type Writer Effect (2018)](https://www.youtube.com/watch?v=POX3dT-pB4E&t=1232s)</li>
+
+<li> The JavaScript for EmailJS is adapted from Code Institute Lectures:
+
+[Interactive Front-End](https://courses.codeinstitute.net/)</li>
+
+</ol>
+
+## Acknowledgements
+
+<p> I would like to thank-you Code Institute for allowing me to complete the Level 5 Diploma Full Stack Software Development and for teaching me to
+code. </p>
 
