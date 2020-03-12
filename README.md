@@ -83,7 +83,7 @@
 
 <ul>
 
-<li><a href = "https://validator.w3.org/">WC3 Markup Validation Service</a></li> WC3 was used to validate HTML Code.
+<li><a href = "https://validator.w3.org/">WC3 Mark-up Validation Service</a></li> WC3 was used to validate HTML Code.
 <li><a href = "https://jigsaw.w3.org/css-validator/">WC3 CSS Validation Service</a></li> WC3 CSS was used to validate CSS Code.
 <li><a href ="https://pypi.org/project/autopep8/">autopep8</a></li> autopep8 was used confirm python code to the PEP8 standard. 
 <li><a href = "https://jshint.com/">JS Hint</a></li>JS Hint was used to validate JavaScript and JQuery.
@@ -121,6 +121,12 @@ The website was testing on the following devices and found to display code eleme
 
 ### Contact Form - Manuel Testing
 
+<ol>
+<li> User tries to submit form with no data entered - warning message flashes on name field to enter data.</li>
+<li> User tries to submit form with only name entered - warning message flashes on email field (required field).</li>
+<li> User tries to submit form with only name and email entered - warning message flashes on message field (required field).</li>
+<li> User enters data in all required fields - name, email and message - form submits and alert flashes up to inform successful submission. Once clicked on the form refreshes. </li>
+</ol>
 
 ### Responsive Design
 
