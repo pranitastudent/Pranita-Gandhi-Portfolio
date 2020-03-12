@@ -8,11 +8,6 @@ $(document).ready(function(){
  $('.collapsible').collapsible();
 }); 
 
-// Lazy load showcase image
-$(document).ready(function(){
-$("#home").lazyload();
-});
-
 // Card Flip
 $(document).ready(function(){
   $("#card").flip();
@@ -48,32 +43,38 @@ $('#topBtn').click(function() {
 
 //  Contact Form JS
 
+
+
 (function () {
-emailjs.init("user_SKMrQyETOHlh9PnTFZs4p");     
-})();
-
-function sendMail(contactForm) {
-emailjs.send("gmail", "pranita", {
-  "name": contactForm.name.value,
-  "phone":contactForm.phone.value,
-  "email": contactForm.email.value,
-  "query_request": contactForm.message.value
-})
-.then(
-  function(response) {
-      alert("Your message has been successfully sent");
-      console.log("SUCCESS", response);
-      window.location.reload(true);
-     
-  },
-  function(error) {
-      console.log("FAILED", error);
-      alert("Opps something went wrong please try again ..");
+  emailjs.init("user_SKMrQyETOHlh9PnTFZs4p");     
+  })();
+  
+  function sendMail(contactForm) {
+  emailjs.send("gmail", "pranita", {
+    "name": contactForm.name.value,
+    "phone":contactForm.phone.value,
+    "email": contactForm.email.value,
+    "query_request": contactForm.message.value
+  })
+  .then(
+    function(response) {
+        alert("Your message has been successfully sent");
+        console.log("SUCCESS", response);       
+        window.location.reload(true);
+        $(document).ready(function(){
+          $(window).scrollTop(0);
+      });   
+       
+    },
+    function(error) {
+        console.log("FAILED", error);
+        alert("Opps something went wrong please try again ..");
+    }
+  
+  );
+  return false;
   }
-
-);
-return false;
-}
+  
 
 // Type Writer Effect- heading in showcase
 
