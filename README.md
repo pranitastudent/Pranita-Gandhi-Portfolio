@@ -145,9 +145,7 @@ The website was testing on the following devices and found to display code eleme
 
 <p> All icons for the skills section are taken from :
 
-[Flaticon](https://www.flaticon.com/free-icons/picture) and :
-
-[Wikipedia](https://www.wikipedia.org/) </p>
+[Flaticon](https://www.flaticon.com/free-icons/picture) and [Wikipedia](https://www.wikipedia.org/) </p>
 
 ### References
 
