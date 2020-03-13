@@ -21,7 +21,7 @@
 
 <p> The wireframes for the website were created in Balsamiq and can be found at:
 
- [wireframes](). Each wireframe contains three mock-ups which include; desktops and for responsive design; tablets and mobiles.</p>
+ [wireframes](wireframes/portfolio.pdf). Each wireframe contains three mock-ups which include; desktops and for responsive design; tablets and mobiles.</p>
 
 ## Features
 

@@ -63,6 +63,7 @@ $('#topBtn').click(function() {
         window.location.reload(true);
         $(document).ready(function(){
           $(window).scrollTop(0);
+          
       });   
        
     },
