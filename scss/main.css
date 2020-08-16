@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+/* Root Variables */
+/* Row reset */
+.row {
+  margin-bottom: 0;
+  padding-bottom: 1.25rem;
+}
+
+/* Body */
+body {
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+nav a.item:hover {
+  background-color: #034f84;
+}
+
+nav a.item {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+/* Sidebar */
+.sidenav {
+  background-color: #fff !important;
+}
+
+i.material-icons.close {
+  color: #ff0000 !important;
+}
+
+/* Showcase */
+#home {
+  position: relative;
+  background: url(../img/showcase2.webp) no-repeat center center/cover;
+  min-height: 600px;
+}
+
+#home .heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home #content {
+  font-size: 6em;
+  font-weight: 400;
+  color: #d6cbd3;
+}
+
+#home .lead {
+  font-size: 4em;
+  font-weight: 400;
+  color: #d6cbd3;
+}
+
+/* About */
+#about {
+  background-color: #d6cbd3;
+  padding: 20px;
+}
+
+#about .heading {
+  text-align: center !important;
+  font-size: 4rem;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+#about .projects {
+  color: #034f84;
+}
+
+#about .projects:hover {
+  color: red;
+}
+
+#about .diploma {
+  color: #034f84;
+}
+
+#about .diploma:hover {
+  color: red;
+}
+
+.pranita {
+  border-radius: 30%;
+}
+
+.about {
+  padding-top: 30px;
+  font-size: 1.5rem;
+}
+
+/* Soft Skills */
+.soft {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  list-style-type: square !important;
+}
+
+/* Work History */
+.history-heading {
+  margin-bottom: 1.5em;
+}
+
+.timeline-item {
+  padding: 2em 2em 0em 2em;
+  position: relative;
+  color: #000;
+  border-left: 1px solid;
+}
+
+.timeline-item .timeline-item p {
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::before {
+  content: attr(data-dates);
+  position: absolute;
+  left: 2.5em;
+  top: 3em;
+  display: block;
+  font-weight: 500;
+  font-size: .8em;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-item::after {
+  width: 12px;
+  height: 12px;
+  display: block;
+  top: 2.4em;
+  position: absolute;
+  left: -6px;
+  border-radius: 12px;
+  content: '';
+  background: #000;
+}
+
+/* Social Icons */
+.social a {
+  color: #fff;
+  margin-right: 1.5em;
+}
+
+.social a :hover {
+  color: #034f84;
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+/* Skills */
+#skills {
+  background-color: #d3d3d3;
+}
+
+#skills .heading-skills {
+  margin-bottom: 5rem;
+}
+
+#skills .chip {
+  padding: 0 65px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color: #000;
+  margin: 0.6px 0.9rem 1.25rem 0.6rem;
+  cursor: pointer;
+}
+
+#skills .chip-img {
+  margin-top: 0.6rem;
+}
+
+#skills .skills-set {
+  margin-bottom: 0;
+}
+
+.chip {
+  transform: rotate(0deg);
+  transition: transform 0.5s ease;
+}
+
+.chip:hover {
+  transition: transform 1s ease;
+  transform: rotate(360deg);
+}
+
+/* Projects */
+#projects {
+  background-color: #e0eeee;
+  padding-bottom: 1.5rem;
+}
+
+#projects .heading-projects {
+  margin-top: 0;
+  padding: 1rem;
+}
+
+/* Buttons */
+.btn {
+  background-color: #000;
+}
+
+.btn:hover {
+  background-color: #034f84;
+}
+
+/* Flip- adapted from WS Schools */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 6.25rem;
+}
+
+.flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.flip-card .card-title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.card-btn {
+  border-radius: 10px;
+}
+
+.img-card {
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.flip-card-front {
+  color: #000;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Contact Form */
+#contact {
+  background-color: #ebfff1;
+}
+
+#contact .heading-contact {
+  margin-top: 0;
+  padding-top: 1.8rem;
+}
+
+#contact .form-contact {
+  padding: 2em;
+}
+
+/* Footer */
+.main-footer {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.main-footer .flow-text {
+  padding-top: 1rem;
+  flex: 1;
+}
+
+.main-footer .flow-text .email {
+  color: #fff !important;
+}
+
+.main-footer .social {
+  padding-top: 1rem;
+}
+
+/* Back to Top button */
+#topBtn {
+  position: fixed;
+  bottom: 100px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #034f84;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  nav a.brand-logo {
+    font-size: 1.1rem;
+  }
+  #home {
+    min-height: 300px;
+  }
+  #home #content {
+    font-size: 4em;
+    font-weight: 400;
+    color: #d6cbd3;
+  }
+  #home .lead {
+    font-size: 2em;
+    font-weight: 400;
+    color: #d6cbd3;
+  }
+}
+
+@media (max-width: 670px) {
+  #topBtn {
+    height: 30px;
+    width: 25px;
+    right: 10px;
+  }
+  .main-footer {
+    height: 300px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  .main-footer {
+    height: 180px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  #home {
+    min-height: 400px;
+  }
+}
+
+/* Ipad landscape */
+@media (min-width: 1000px) and (max-width: 1500px) {
+  .row .col.l3 {
+    width: 50%;
+  }
+}
+
+/* Ipad Vertical */
+@media only screen and (max-width: 1030px) {
+  .flow-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1035px) {
+  .container {
+    width: 98%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .container .row {
+    margin-left: 2.25rem;
+    margin-right: -.75rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 790px) {
+  .row .col.m3 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 700px) {
+  .pranita {
+    margin-top: 12em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
